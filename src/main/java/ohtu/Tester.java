@@ -1,6 +1,5 @@
 package ohtu;
 
-import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,9 +11,9 @@ import java.util.Random;
 public class Tester {
 
     public static void main(String[] args) {
-//        WebDriver driver = new HtmlUnitDriver();
-        ChromeDriverManager.getInstance().setup();
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new HtmlUnitDriver();
+//        ChromeDriverManager.getInstance().setup();
+//        WebDriver driver = new ChromeDriver();
         WebElement element;
 
         driver.get("http://localhost:4567");
